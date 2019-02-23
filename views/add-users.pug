@@ -1,0 +1,14 @@
+//- sub-layout.pug
+extends main-layout/layout.pug
+
+block content
+    main
+        form.product-form(action="/admin/add-users", method="post")
+            .form-control
+                label(for="name") Name
+                input(type="text", value="", name="name", id="name")
+                label(for="name") Lastname
+                input(type="text", value="", name="lastname", id="lastname")
+                label(for="name") Description
+                textarea(name="description", cols="30", rows="10")
+            button(type="submit") Add User
